@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15.625, 8.5" name="DataClasses1">
+  <DataContextMoniker Name="/VisDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1391fc31-7228-4e9c-be2b-c274c73521a0" absoluteBounds="10.25, 3.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/VisDBDataContext/LoadEvent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e3acf767-5454-43e1-8d8c-85f00399edcf" absoluteBounds="10.265, 3.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8edc4b2b-8654-4ab5-ac9f-119020482033" absoluteBounds="13.375, 2.5, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/VisDBDataContext/TransferEvent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="06913462-9407-4a5a-b050-de10126bfc05" absoluteBounds="13.39, 2.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(13.375 : 4.01044840494792); (12.25 : 4.01044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/VisDBDataContext/TransferEvent/TransferEvent_LoadEvent" />
+      <nodes>
+        <classShapeMoniker Id="8edc4b2b-8654-4ab5-ac9f-119020482033" />
+        <classShapeMoniker Id="1391fc31-7228-4e9c-be2b-c274c73521a0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="703f963d-b9dc-4ab5-9ab6-d921bbbe82ea" absoluteBounds="7.25, 3, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/VisDBDataContext/Load" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e0b2dfb-95a9-45b6-bb14-6dc2dc67e29e" absoluteBounds="7.265, 3.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.25 : 4.01044840494792); (10.25 : 4.01044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/VisDBDataContext/Load/Load_LoadEvent" />
+      <nodes>
+        <classShapeMoniker Id="703f963d-b9dc-4ab5-9ab6-d921bbbe82ea" />
+        <classShapeMoniker Id="1391fc31-7228-4e9c-be2b-c274c73521a0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7131b61c-462e-4dbc-9bfd-4198c1afa01c" absoluteBounds="4.25, 2.875, 2, 2.5401025390625">
+      <DataClassMoniker Name="/VisDBDataContext/Container" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be238781-f16e-4cce-a43a-d14f81db86ce" absoluteBounds="4.265, 3.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.25 : 4.17390055338542); (7.25 : 4.17390055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/VisDBDataContext/Container/Container_Load" />
+      <nodes>
+        <classShapeMoniker Id="7131b61c-462e-4dbc-9bfd-4198c1afa01c" />
+        <classShapeMoniker Id="703f963d-b9dc-4ab5-9ab6-d921bbbe82ea" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
